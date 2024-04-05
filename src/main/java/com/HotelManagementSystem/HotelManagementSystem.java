@@ -11,7 +11,7 @@ public class HotelManagementSystem extends JFrame {
         setBounds(100, 100, 1366, 565);
         setLayout(null);
 
-        ImageIcon i1 = new ImageIcon(ClassLoader.getSystemResource("icons/first.jpg"));
+        ImageIcon i1 = new ImageIcon(ClassLoader.getSystemResource("icons/hotelphoto.png"));
         JLabel image = new JLabel(i1);
         image.setBounds(0, 0, 1366, 565);
         add(image);
