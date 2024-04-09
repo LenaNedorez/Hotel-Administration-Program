@@ -1,4 +1,12 @@
-public class Login extends JFrame implements ActionListener{
+package main.java.com.HotelManagementSystem;
+
+import javax.swing.*;
+import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.sql.ResultSet;
+
+public class Login extends JFrame implements ActionListener {
     
     JLabel l1,l2;
     JTextField t1;
@@ -70,7 +78,7 @@ public class Login extends JFrame implements ActionListener{
             
             String q = "select * from login where username='"+u+"' and password='"+v+"'";
             
-            ResultSet rs = c1.s.executeQuery(q); 
+            ResultSet rs = c1.s.executeQuery(q);
             if(rs.next()){ 
                 new Dashboard().setVisible(true);
                 setVisible(false);
@@ -87,4 +95,4 @@ public class Login extends JFrame implements ActionListener{
     }
     public static void main(String[] arg){
         new Login();
-    }
+    } }
