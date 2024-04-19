@@ -146,7 +146,7 @@ public class AddEmployee extends JFrame{ //Third Frame
                 String s6 = (String)c1.getSelectedItem();
 
                 try {
-                    conn c = new conn();
+                    Connection c = new Connection();
                     String str = "INSERT INTO employee values( '"+name+"', '"+age+"', '"+gender+"','"+s6+"', '"+salary+"', '"+phone+"','"+aadhar+"', '"+email+"')";
 
                     c.s.executeUpdate(str);

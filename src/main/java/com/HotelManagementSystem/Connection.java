@@ -2,10 +2,10 @@ package main.java.com.HotelManagementSystem;
 
 import java.sql.*;
 
-public class conn{
-    Connection c;
+public class Connection {
+    java.sql.Connection c;
     Statement s;
-    public conn(){
+    public Connection(){
         try{
             Class.forName("com.mysql.jdbc.Driver");
             c =DriverManager.getConnection("jdbc:mysql:///hms","root","");

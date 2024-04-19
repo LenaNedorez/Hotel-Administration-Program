@@ -1,10 +1,7 @@
 package main.java.com.HotelManagementSystem;
 
-import java.awt.BorderLayout;
 import java.awt.*;
 import java.awt.EventQueue;
-
-import javax.swing.border.EmptyBorder;
 
 import java.awt.Font;
 import java.awt.Image;
@@ -13,7 +10,7 @@ import javax.swing.*;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
 public class NewCustomer extends JFrame {
-    Connection conn = null;
+    java.sql.Connection Connection = null;
     PreparedStatement pst = null;
     private JPanel contentPane;
     private JTextField t1,t2,t3,t4,t5,t6;
@@ -108,7 +105,7 @@ public class NewCustomer extends JFrame {
 
         c1 = new Choice();
         try{
-            conn c = new conn();
+            Connection c = new Connection();
             ResultSet rs = c.s.executeQuery("select * from room");
             while(rs.next()){
                 c1.add(rs.getString("room_number"));
@@ -145,7 +142,7 @@ public class NewCustomer extends JFrame {
         JButton btnNewButton = new JButton("Add");
         btnNewButton.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
-                conn c = new conn();
+                Connection c = new Connection();
                 String radio = null;
 
                 if(r1.isSelected()){

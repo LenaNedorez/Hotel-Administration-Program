@@ -1,6 +1,5 @@
 package main.java.com.HotelManagementSystem;
 
-import java.awt.BorderLayout;
 import java.awt.*;
 import java.awt.EventQueue;
 
@@ -14,7 +13,7 @@ import java.awt.event.*;
 import java.awt.event.ActionEvent;
 
 public class CheckOut extends JFrame{
-    Connection conn = null;
+    java.sql.Connection Connection = null;
     PreparedStatement pst = null;
     private JPanel contentPane;
     private JTextField t1;
@@ -70,7 +69,7 @@ public class CheckOut extends JFrame{
 
         c1 = new Choice();
         try{
-            conn c = new conn();
+            Connection c = new Connection();
             ResultSet rs = c.s.executeQuery("select * from customer");
             while(rs.next()){
                 c1.add(rs.getString("number"));
@@ -92,7 +91,7 @@ public class CheckOut extends JFrame{
                 System.out.println("Hi");
                 try{
 
-                    conn c = new conn();
+                    Connection c = new Connection();
                     String number = c1.getSelectedItem();
                     ResultSet rs = c.s.executeQuery("select * from customer where number = "+number);
 
@@ -123,7 +122,7 @@ public class CheckOut extends JFrame{
                 String q2 = "update room set availability = 'Available' where room_number = "+s1;
 
 
-                conn c = new conn();
+                Connection c = new Connection();
 
                 try{
 

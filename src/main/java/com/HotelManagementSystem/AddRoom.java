@@ -3,10 +3,7 @@ package main.java.com.HotelManagementSystem;
 
 import java.awt.*;
 import javax.swing.*;
-import javax.swing.border.*;
 import java.awt.event.*;
-import java.sql.*;
-import java.util.*;
 
 public class AddRoom extends JFrame implements ActionListener{
 
@@ -120,7 +117,7 @@ public class AddRoom extends JFrame implements ActionListener{
 
             if(ae.getSource() == b1){
                 try{
-                    conn c = new conn();
+                    Connection c = new Connection();
                     String room = t4.getText();
                     String available = (String)comboBox.getSelectedItem();
                     String status = (String)comboBox_2.getSelectedItem();

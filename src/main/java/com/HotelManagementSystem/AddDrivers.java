@@ -1,11 +1,9 @@
 package main.java.com.HotelManagementSystem;
 
-import java.awt.*;
 import javax.swing.*;
-import javax.swing.border.*;
-import java.awt.event.*;
-import java.sql.*;
-import java.util.*;
+import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
 public class AddDrivers extends JFrame implements ActionListener{
 
@@ -144,7 +142,7 @@ public class AddDrivers extends JFrame implements ActionListener{
 
             if(ae.getSource() == b1){
                 try{
-                    conn c = new conn();
+                    Connection c = new Connection();
                     String name = t1.getText();
                     String age = t2.getText();
                     String gender = (String)comboBox.getSelectedItem();
