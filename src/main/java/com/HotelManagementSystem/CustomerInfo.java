@@ -1,19 +1,14 @@
 package main.java.com.HotelManagementSystem;
 
-import java.awt.BorderLayout;
-import java.awt.*;
-
-import javax.swing.JFrame;
-import javax.swing.JPanel;
-import javax.swing.border.EmptyBorder;
-
 import net.proteanit.sql.DbUtils;
-import java.sql.*;
+
 import javax.swing.*;
-import javax.swing.JTable;
-import javax.swing.JButton;
-import java.awt.event.ActionListener;
+import javax.swing.border.EmptyBorder;
+import java.awt.*;
 import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.sql.ResultSet;
+import java.sql.SQLException;
 
 public class CustomerInfo extends JFrame {
     Connection conn = null;
@@ -76,7 +71,7 @@ public class CustomerInfo extends JFrame {
         btnLoadData.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent arg0) {
                 try{
-                    conn c  = new conn();
+                    Connection c  = new Connection();
 
                     String displayCustomersql = "select * from Customer";
                     ResultSet rs = c.s.executeQuery(displayCustomersql);
