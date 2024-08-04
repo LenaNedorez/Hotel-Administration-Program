@@ -1,8 +1,8 @@
 
-<span style="font-size:1.5em;">ER diagram:</span>
+<span style="font-size:2em;">ER diagram:</span>
 ![ER_Diagram](https://github.com/user-attachments/assets/ff367938-5ff2-4ce9-ad48-502d694d2817)
 
-Interface examples:
+Interface examples:  
 ![001](https://github.com/user-attachments/assets/92dd07cd-215c-47ff-98b2-fafe743c8602)
 
 ![002](https://github.com/user-attachments/assets/bac53d59-291a-4171-af24-59e474667c4f)
