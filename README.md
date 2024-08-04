@@ -1,4 +1,5 @@
-ER diagram:
+
+<span style="font-size:1.5em;">ER diagram:</span>
 ![ER_Diagram](https://github.com/user-attachments/assets/ff367938-5ff2-4ce9-ad48-502d694d2817)
 
 Interface examples:
